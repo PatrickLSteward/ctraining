@@ -17,7 +17,7 @@ install:
   - echo "Reached Install Section"
   
 script:
-  - acho "Reached Script Section"
+  - echo "Reached Script Section"
   - gcc     hello_world.c -o output
   - ./output
     
