@@ -1,0 +1,24 @@
+language: c
+
+
+
+compiler:
+
+  - gcc
+  
+before_install:
+  
+    - sudo apt-get update
+    
+    - sudo apt-get -y install libcunit] libcunitl-doc libcunitl-dev
+    
+install:
+
+  - echo "Reached Install Section"
+  
+script:
+  - acho "Reached Script Section"
+  - gcc     hello_world.c -o output
+  - ./output
+    
+    
