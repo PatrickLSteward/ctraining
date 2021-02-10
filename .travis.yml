@@ -10,7 +10,7 @@ before_install:
   
     - sudo apt-get update
     
-    - sudo apt-get -y install libcunit] libcunitl-doc libcunitl-dev
+    - sudo apt-get -y install libcunitl libcunitl-doc libcunitl-dev
     
 install:
 
