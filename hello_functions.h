@@ -1,4 +1,4 @@
-#ifndef MAIN_H
+#ifndef HELLO_FUNCTIONS_H
 
 #define HELLO_FUNCTIONS_H
 
