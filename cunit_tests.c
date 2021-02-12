@@ -9,7 +9,7 @@ void test_add(void){
 }
 
 void test_temp_c_to_f(void){
-    float inputs[] = {-40.0, 0.0, 25.0, 100.0);
+    float inputs[] = {-40.0, 0.0, 25.0, 100.0};
     float expected_outputs[] = {-40.0, 32.0, 77.0, 212.0};
     
     float tolerance = 0.5;
@@ -28,9 +28,9 @@ void test_temp_c_to_f(void){
 }
     
 void test_temp_sensor_to_c_void(void){
-    bool succes = false;
+    bool success = false;
     
-    int inputs[] = (0, 511, 1023);
+    int inputs[] = {0, 511, 1023};
     float expected_outputs[] = {-55.0, 34.0, 125.0};
     
     float tolerance = 0.1;
@@ -50,7 +50,7 @@ void test_temp_sensor_to_c_void(void){
 }
     
 void test_temp_sensor_to_c_invalid(void){
-    int inputs[] = {-100, -1, 1024, 1100);
+    int inputs[] = {-100, -1, 1024, 1100};
     float expected_outputs[] = {-100.0, -100.0, -100.0,-100.0};
     bool success = true;
                     
@@ -77,12 +77,12 @@ int main() {
     CU_pSuite suite1 = CU_add_suite("test_add", 0, 0);
     CU_pSuite suite2 = CU_add_suite("test_temp_c_to_f", 0, 0);
     CU_pSuite suite3 = CU_add_suite("test_temp_sensor_to_c_void", 0, 0);
-    CU_pSuite suite4 = CU_add_suite("test_temp_sensor_to_c_invalidf", 0, 0);
+    CU_pSuite suite4 = CU_add_suite("test_temp_sensor_to_c_invalid", 0, 0);
     
     CU_add_test(suite1, "test_add", test_add);
     CU_add_test(suite2, "test_temp_c_to_f", test_temp_c_to_f);
     CU_add_test(suite3, "test_temp_sensor_to_c_void", test_temp_sensor_to_c_void);
-    CU_add_test(suite4, "test_temp_sensor_to_c_invalidf", test_temp_sensor_to_c_invalidf);
+    CU_add_test(suite4, "test_temp_sensor_to_c_invalid", test_temp_sensor_to_c_invalid);
     
     CU_basic_set_mode(CU_BRM_VERBOSE);
 
