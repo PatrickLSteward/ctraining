@@ -2,12 +2,6 @@
 #include <CUnit/Basic.h>
 #include "hello_functions.h"
 
-//the add function is a stub
-int add(int a, int b){
-  return a + b;
-}
-
-
 void test_add(void)
 {
     CU_ASSERT(add(2,2) == 4);
