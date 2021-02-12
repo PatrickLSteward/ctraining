@@ -1,6 +1,6 @@
 #include <CUnit/CUnit.h>
 #include <CUnit/Basic.h>
-#include "main.h"
+#include "hello_functions.h"
 
 //the add function is a stub
 int add(int a, int b){
