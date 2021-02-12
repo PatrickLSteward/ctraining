@@ -1,4 +1,3 @@
-#include <stdio.h> 
 #include <stdio.h>
 #include <stdtool.h>
 #include "hello_functions.h"
