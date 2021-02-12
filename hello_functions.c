@@ -16,7 +16,7 @@ int add(int a, int b){
 
 // takes temp_sensor_value that is an int between 0 and 1023 and converts it to a float temp_celsius between -55 and 125
 
-float tmep_sensor_converter(int temp_sensor_value, bool *success)
+float temp_sensor_converter(int temp_sensor_value, bool *success)
 {
   float temp_celsius = 0;
   // 0 reading = -55 C temp, 1023 reading = 125 C temp, assuming linear relationship
