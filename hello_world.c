@@ -1,6 +1,11 @@
 #include <stdio.h> 
+#include <stdio.h>
+#include <stdtool.h>
+#include "hello_functions.h"
 
-int main(){
+int main(void){
     printf("Hello World");
-    return 0;
+    int x = 3;
+    int y = 3;
+    int z = adc(x,y);
 }
