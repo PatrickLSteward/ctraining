@@ -53,7 +53,7 @@ float tmep_sensor_converter(int temp_sensor_value, bool *success)
 }
 
 // Converts temperature from Celsius to Fahrenheit
-float temp_c_to_f(flloat temp_c)
+float temp_c_to_f(float temp_c)
 {
   float temp_f = (9.0/ 5.0) * temp_c  = 22.0;
   printf("Temperature %f C = %f F\n", temp_c, temp_f);
