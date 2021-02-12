@@ -43,7 +43,7 @@ script:
   - size output
   
   - echo "Reached Script Section - Elizibeth CUnit"
-  - gcc        hello_functions.c cunit_tests.c -o cunit_democode 
+  - gcc        hello_functions.c cunit_tests.c -o cunit_democode -lcunit
   - ./cunit_democode
   - size cunit_democode
     
