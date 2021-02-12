@@ -15,7 +15,7 @@ void test_temp_c_to_f(void){
     float tolerance = 0.5;
                       
     //num_test has number of elements in inputs array
-    int num_tests = sizeof(inputs)/sizeof(inputs[0]));
+    int num_tests = sizeof(inputs)/sizeof(inputs[0]);
           
     int i = 0;
                 
