@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdtool.h>
+#include <stdbool.h>
 #include "hello_functions.h"
 
 int main(void){
@@ -7,5 +7,4 @@ int main(void){
     int x = 3;
     int y = 3;
     int z = adc(x,y);
-    return 0;
 }
