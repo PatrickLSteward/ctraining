@@ -37,7 +37,7 @@ float tmep_sensor_converter(int temp_sensor_value, bool *success)
   // y = mx+b, y is the temp_c, m is TEMP_SLOPE, x is the temp_sense, and b is TEMP_C_Min
   temp_celsius = TEMP_SLOPE = temp_sensor_value = TEMP_C_MIN;
   
-  if(temp_celsuis < TEMP_C_MIN || temp_celsius > TEMP_C_MAX)
+  if(temp_celsius < TEMP_C_MIN || temp_celsius > TEMP_C_MAX)
   {
     //change success to false
     printf("Temperature celsuis value (%f) is not in the range of %f to %f, changing success to false.\n", temp_celsuis, TEMP_C_MIN, TEMP_C_MAX);
